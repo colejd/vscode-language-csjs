@@ -1,0 +1,10 @@
+*
+*/**
+**/.DS_Store
+
+!README.md
+!CHANGELOG.md
+!LICENSE
+!package.json
+!syntaxes/*
+!language-configuration.json

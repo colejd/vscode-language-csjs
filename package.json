@@ -4,6 +4,11 @@
     "description": "CSJS syntax highlighter for Visual Studio Code",
     "version": "1.0.0",
     "publisher": "colejd",
+    "homepage": "https://github.com/colejd/vscode-language-csjs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/colejd/vscode-language-csjs"
+    },
     "engines": {
         "vscode": "^1.15.0"
     },
