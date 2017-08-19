@@ -1,0 +1,26 @@
+{
+    "name": "vscode-language-csjs",
+    "displayName": "CSJS Syntax Highlighter",
+    "description": "CSJS syntax highlighter for Visual Studio Code",
+    "version": "1.0.0",
+    "publisher": "colejd",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "csjs",
+            "aliases": ["CSJS", "csjs"],
+            "extensions": [".csjs.js"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "csjs",
+            "scopeName": "source.csjs",
+            "path": "./syntaxes/csjs.tmLanguage.json"
+        }]
+    }
+}
