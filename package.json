@@ -15,6 +15,7 @@
     "categories": [
         "Languages"
     ],
+    "icon": "/assets/icon.png",
     "contributes": {
         "languages": [{
             "id": "csjs",
