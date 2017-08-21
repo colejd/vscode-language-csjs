@@ -10,12 +10,20 @@
 		"csjs.js"
   ],
   "patterns": [
-    { "//": "Use CSS highlighting inside any csjs`` block" },
+
     {
+      "comment": "CSJS block rules",
       "begin": "csjs`",
       "end": "`",
       "patterns": [
         {
+          "comment": "Highlight JS in ${} blocks",
+          "begin": "\\$(?=\\{)",
+          "end": "(?!\\G)",
+          "patterns": [ { "include": "source.js" } ]
+        },
+        {
+          "comment": "Highlight CSS",
           "begin": "(?=\\{)",
           "end": "(?!\\G)",
           "patterns": [
@@ -27,16 +35,18 @@
             { "include": "#rule-list" }
           ]
         },
-        { "include": "source.css" }
+        {"include": "source.css"}
       ]
     },
 
-    { "//": "Highlight JS in the rest of the file" },
-    { "include": "source.js" }
+    { 
+      "comment": "Highlight JS in the rest of the file",
+      "include": "source.js" 
+    }
 
   ],
 
-  "//": "The following is the contents of 'repository' at the linked file above, with no alterations.",
+  "comment": "The following is the contents of 'repository' at the linked file above, with no alterations.",
 	"repository": {
 		"at-rules": {
 			"patterns": [

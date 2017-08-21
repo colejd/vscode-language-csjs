@@ -7,6 +7,8 @@
 
 [CSJS](https://github.com/rtsao/csjs) is a JavaScript library that lets you write inline CSS in your JavaScript code. The CSS goes in a string, however, so you don't get any syntax highlighting. This extension adds regular CSS highlighting inside any CSJS block.
 
+**Please contribute if you know how TextMate grammars work!** Right now the CSS-in-JS highlighting works perfectly, but inline `${}` blocks in the CSS will not be highlighted as JS.
+
 ## Installation
 
 You can find it on the [Extensions Marketplace](https://marketplace.visualstudio.com/vscode) under the name `CSJS Syntax Highlighter`.
