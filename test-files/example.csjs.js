@@ -16,7 +16,7 @@ module.exports = csjs`
     div {
         color: #fff;
 
-        color: ${ someColor };
+        color: ${ var someColor };
         
         ${
             let x = 10;
