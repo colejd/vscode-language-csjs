@@ -16,20 +16,21 @@ module.exports = csjs`
     div {
         color: #fff;
 
-        color: ${ var someColor };
+        color: ${ someColor };
         
         ${
-            let x = 10;
-            let fn = () => {
-                
+            let fn = function() {
+                return "color: black;";
             }
+            return fn();
         }
 
         ${
-            let x = 10;
-            let fn = () => {
-                
+            // Second example (test if mutliple blocks in a row highlight properly)
+            let fn = function() {
+                return "color: white;";
             }
+            return fn();
         }
 
     }
