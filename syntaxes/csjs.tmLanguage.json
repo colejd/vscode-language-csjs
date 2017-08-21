@@ -1418,6 +1418,9 @@
 		"property-values": {
 			"patterns": [
 				{
+					"include": "#expression"
+				},
+				{
 					"include": "#commas"
 				},
 				{

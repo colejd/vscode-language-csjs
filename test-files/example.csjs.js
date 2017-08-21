@@ -1,6 +1,7 @@
 const csjs = require('csjs');
 
 let someColor = '#fff';
+let someWidth = 10;
 
 module.exports = csjs`
 
@@ -17,6 +18,7 @@ module.exports = csjs`
         color: #fff;
 
         color: ${ someColor };
+        width: calc(${someColor}px + 10px);
         
         ${
             let fn = function() {
